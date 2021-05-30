@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validator</title>
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- <h1>Form Validator Project</h1> -->
+  <div class="container">
+    <h2>Connect with us</h2>
+    <form action="#" class="form" id="form"> <!-- We use class for css and ID for java script. -->
+      
+      <div class="form-control">
+        <label for="username">Username</label> <!-- for name and the id in input should be same. If we press on label then we can see the cursor in input block means label is for that input block. If for is not there it will not highlight the input bar.-->
+        <input type="text" name="username" id="username" placeholder="                 Enter Username">
+        <small>Username is Required</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label> <!-- for name and the id in input should be same. If we press on label then we can see the cursor in input block means label is for that input block. If for is not there it will not highlight the input bar.-->
+        <input type="text" name="email" id="email" placeholder="         Enter your Email Address">
+        <small>Email is Required</small>
+      </div>
+
+      <div class="form-control">
+        <label for="password">Password</label> <!-- for name and the id in input should be same. If we press on label then we can see the cursor in input block means label is for that input block. If for is not there it will not highlight the input bar.-->
+        <input type="text" name="password" id="password" placeholder="             Password is Required">
+        <small>Password is Required</small>
+      </div>
+
+      <div class="form-control">
+        <label for="confirm-password">Confirm-Password</label> <!-- for name and the id in input should be same. If we press on label then we can see the cursor in input block means label is for that input block. If for is not there it will not highlight the input bar.-->
+        <input type="text" name="confirm-password" id="confirm-password" placeholder="          Confirm your Password        ">
+        <small>Confirm-Password is Required</small>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
